@@ -51,8 +51,7 @@ function Navbar() {
         <Toolbar className="toolbar">
           <Typography variant="h3" >
             <a href="/">
-
-              Gabriel Finzetto
+              <img src="/logo.png" alt="Logo" />
             </a>
 
           </Typography>
@@ -63,8 +62,8 @@ function Navbar() {
               <Link to="/" className={classes.link}>
                 Home
               </Link>
-              <Link to="/about" className={classes.link}>
-                About
+              <Link to="/quem-somos" onClick={() => scrollToSection('about')} className={classes.link}>
+                Sobre nós
               </Link>
               <Link to="/contact" className={classes.link}>
                 Contact

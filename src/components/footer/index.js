@@ -1,14 +1,49 @@
 import { Component } from "./styles";
 import contact from '../../data/contact.json';
+import tags from '../../data/tags.json';
+import links from '../../data/links.json';
+import { Tags } from "./tags";
+import { Links } from "./links";
+
+function getRandomItems(arr, n) {
+  const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, n);
+}
 
 export function Footer() {
+  const data = tags.tags;
+  const randomQuestions = getRandomItems(data, 4);
+  const link = links.links;
   return (
     <Component>
 
       <div className="content">
-        <div></div>
-        <div></div>
+        <div>
+          <img src="/logo.png" alt="logo" />
+        </div>
+        <div>
+          <h2>Links Úteis</h2>
+          {link.map(link => (
+            <Links
+              key={link.page}
+              page={link.page}
+              url={link.url}
+            />
+          ))}
+
+        </div>
+        <div>
+          <h2>Soluções</h2>
+          {randomQuestions.map((tags, index) => (
+            <Tags
+              key={index}
+              tags={tags.title}
+              description={tags.description}
+            />
+          ))}
+        </div>
         <div className="flex-center">
+          <h2>Fale Conosco</h2>
           <ul className="contact">
             <li>
               <a href={contact.map} rel="noreferrer" target="_blank" title='Localização'>
@@ -39,7 +74,7 @@ export function Footer() {
       </div>
 
       <div className="copyright">
-        <p>Copyright by <a href="http://gabrielvoliveira.com" rel="noreferrer" target="_blank"><span>Gabriel Oliveira</span></a></p>
+        <p>Finzetto Cybersecurity Todos os direitos reservados | Desenvolvido por <a href="http://gabrielvoliveira.com" rel="noreferrer" target="_blank"><span>Gabriel Oliveira</span></a></p>
       </div>
     </Component>
   )

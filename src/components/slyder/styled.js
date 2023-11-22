@@ -7,8 +7,6 @@ export const Component = styled.div`
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-evenly;
-  background: url(/back.jpg) no-repeat fixed center ;
-
 
   hgroup {
     z-index: 1;
@@ -19,10 +17,10 @@ export const Component = styled.div`
     width: 450px;
 
     h1 {
-      color: var(--primary-blue);
+      color: var(--gradient-orange);
       font-weight: 900;
       font-size: 45px;
-      text-shadow: 2px 2px #558ABB;
+      text-shadow: 2px 2px var(--gradient-yellow);
      
     }
     .topTitle{
@@ -64,4 +62,20 @@ export const Component = styled.div`
     margin-top: 10px;
     
   }
+
+  .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; 
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
 `;

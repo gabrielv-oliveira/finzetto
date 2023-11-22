@@ -9,6 +9,11 @@ export const Component = styled.header`
         width: 100%;
         display: flex;
         justify-content: space-around;
+
+        img{
+            width: 175px;
+            max-width: 100%;
+        }
     }
 
     .MuiTypography-h3 {

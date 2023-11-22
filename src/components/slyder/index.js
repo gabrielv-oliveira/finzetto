@@ -55,7 +55,13 @@ export default function Slider() {
 
       </div>
 
-
+      <div className="video-container">
+        <video autoPlay muted loop className="video-background">
+          <source src="/background.mov" type="video/mov" />
+          <source src="/background.mp4" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
 
     </Component>
   )

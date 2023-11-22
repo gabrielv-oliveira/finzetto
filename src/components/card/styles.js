@@ -10,12 +10,12 @@ padding: 1rem;
 
  ::before {
     background-color: var(--primary-light-blue);
-    width: 658px;
+    width: 550px;
     height: 150px;
-    top: 478px;
+    top: 500px;
     content: "";
     position: absolute;
     z-index:-1;
-    filter: blur(150px);
+    filter: blur(80px);
   }
 `

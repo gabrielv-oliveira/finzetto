@@ -1,0 +1,28 @@
+{
+  "tags": [
+    {
+      "title": "Teste de Vulnerabilidade",
+      "description": "Identificação e avaliação de vulnerabilidades no sistema para fortalecer a segurança."
+    },
+    {
+      "title": "Análise de Aplicações Web",
+      "description": "Avaliação detalhada de aplicações web em busca de falhas de segurança potenciais."
+    },
+    {
+      "title": "Teste de Intrusão de Rede",
+      "description": "Simulação de ataques para identificar e corrigir vulnerabilidades em redes."
+    },
+    {
+      "title": "Avaliação de Segurança Móvel",
+      "description": "Análise de aplicativos móveis em busca de possíveis brechas de segurança."
+    },
+    {
+      "title": "Engenharia Reversa",
+      "description": "Análise de código para compreender a lógica e identificar possíveis pontos fracos."
+    },
+    {
+      "title": "Social Engineering",
+      "description": "Testes para avaliar a resiliência da equipe contra tentativas de manipulação."
+    }
+  ]
+}

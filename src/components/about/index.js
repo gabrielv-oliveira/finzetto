@@ -19,7 +19,7 @@ export function About() {
     },
   });
   return (
-    <Component>
+    <Component id="about">
       <hgroup>
         <h2>Elevando a sua Segurança Cibernética </h2>
         <p>Nosso compromisso é oferecer aos clientes soluções de segurança cibernética excepcionais, destacando-nos por meio de abordagens ágeis, inteligentes e inovadoras. Através da otimização segura dos processos de negócio, visamos proteger de maneira robusta os dados e informações, navegando eficazmente em um cenário cada vez mais digital e interconectado.</p>
@@ -28,8 +28,9 @@ export function About() {
           <Button
             variant="outlined"
             color="primary"
+            href="/quem-somos"
           >
-            Quem somos
+            Sobre nós
           </Button>
 
         </ThemeProvider>

@@ -5,6 +5,7 @@ export const Component = styled.div`
   overflow: hidden;
   padding: 1.2rem;
   margin-top: 2rem;
+  
 
   ::before {
     background-color: var(--primary-light-blue);
@@ -12,15 +13,25 @@ export const Component = styled.div`
     width: 500px;
     height: 500px;
     top: 0;
-    left: 500px;
+ 
     content: "";
     position: absolute;
     filter: blur(100px);
+    }
+
+  img{
+    width: 150px;
+    max-width: 100%;
   }
+
+  h2 {
+        color: var(--primary-blue);  
+        margin-bottom: 15px ;
+      }
   .content{
     display:flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 
     .flex-center {
       display: flex;
@@ -29,9 +40,7 @@ export const Component = styled.div`
       align-items: center;
       gap: 0.5em;
   
-      h2 {
-        color: #fff;
-      }
+      
   
       .contact{
         display: grid;
@@ -39,13 +48,20 @@ export const Component = styled.div`
         li{
           
           a{
-           font-size: 1.1rem;
+           font-weight: 700;
            color: #fff;
-          }
+          }a
      
           i{
            font-size: 20px;
            margin-right: 5px;
+          }
+
+          :hover{
+            transform: scale(1.1);
+            a{
+              color: var(--primary-blue);
+            }
           }
         }
       
@@ -72,7 +88,8 @@ export const Component = styled.div`
     display: flex;
     position: inherit;
     width: 100%;
-    height: 2rem;   
+    height: 2rem;
+    padding-top: 3rem;
 
     p{
     color: var(--primary-blue);

@@ -4,6 +4,7 @@ export const Component = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem;
   width: 100%;
   gap: 4rem;
@@ -58,12 +59,15 @@ export const Component = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.8em;
-    width: 450px;
+    width: 450px;  
     z-index: 2;
 
-    h2 {
-      color: var(--gradient-blue);
+    h1 {
+      color: var(--accent-purple);
       font-weight: bolder;
+    }
+    button{
+      width: 150px;
     }
   }
 `;

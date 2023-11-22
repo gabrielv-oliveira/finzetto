@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "page": "Termos de Serviço",
+      "url": "/termos-de-serviço"
+    },
+    {
+      "page": "Política de Privacidade",
+      "url": "/politica-de-privacidade"
+    },
+    {
+      "page": "Quem Somos",
+      "url": "/quem-somos"
+    },
+    {
+      "page": "Certificações",
+      "url": "/certificacoes"
+    }
+  ]
+}
