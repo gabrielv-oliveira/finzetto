@@ -18,8 +18,9 @@ export function Footer() {
     <Component>
 
       <div className="content">
-        <div>
+        <div className="company">
           <img src="/logo.png" alt="logo" />
+          <p>Nosso compromisso é oferecer aos clientes soluções de segurança cibernética excepcionais, destacando-nos por meio de abordagens ágeis, inteligentes e inovadoras.</p>
         </div>
         <div>
           <h2>Links Úteis</h2>

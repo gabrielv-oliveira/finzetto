@@ -56,11 +56,13 @@ export const Component = styled.div`
   }
 
   .img {
-    width: 350px;
-    height: 300px;
-    background-color: var(--primary-light-blue);
+   
     margin-top: 10px;
-    
+    #container{
+      #logo{
+        display: none !important;
+      }
+    }
   }
 
   .video-container {

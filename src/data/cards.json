@@ -15,5 +15,42 @@
       "titulo": "Consultoria Especializada",
       "texto": "Orientação de experts para fortalecer sua infraestrutura e práticas de TI."
     }
+  ],
+  "sections": [
+    {
+      "id": "nossa-missao",
+      "title": "Nossa Missão",
+      "icon": "security",
+      "content": "Na Finzetto, acreditamos que a segurança cibernética é essencial para o sucesso contínuo de indivíduos e empresas em um ambiente digital em constante evolução. Nossa missão é fornecer serviços de ponta em cibersegurança, permitindo que nossos clientes naveguem no mundo online com confiança."
+    },
+    {
+      "id": "compromisso-com-a-inovacao",
+      "title": "Compromisso com a Inovação",
+      "icon": "engineering",
+      "content": "Vivemos em uma era de avanços tecnológicos rápidos, e na Finzetto, abraçamos a inovação. Nossa equipe é composta por especialistas em segurança cibernética altamente qualificados, prontos para enfrentar os desafios digitais mais complexos."
+    },
+    {
+      "id": "transparencia-e-parceria",
+      "title": "Transparência e Parceria",
+      "icon": "group",
+      "content": "Acreditamos em construir relacionamentos sólidos com nossos clientes. A transparência é a base de tudo o que fazemos. Trabalhamos lado a lado com você para entender suas necessidades exclusivas e desenvolver estratégias de segurança personalizadas."
+    }
+  ],
+  "hide": [
+    {
+      "id": "1",
+      "title": "Compromisso com a Inovação:",
+      "content": "Mantemo-nos à frente das últimas tendências e ameaças em cibersegurança."
+    },
+    {
+      "id": "2",
+      "title": "Equipe Especializada:",
+      "content": "Especialistas altamente qualificados e apaixonados por segurança digital."
+    },
+    {
+      "id": "3",
+      "title": "Soluções Personalizadas:",
+      "content": "Abordagens sob medida para atender às suas necessidades específicas."
+    }
   ]
 }

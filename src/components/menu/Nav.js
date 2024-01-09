@@ -62,14 +62,14 @@ function Navbar() {
               <Link to="/" className={classes.link}>
                 Home
               </Link>
-              <Link to="/quem-somos" onClick={() => scrollToSection('about')} className={classes.link}>
+              <Link to="/quem-somos" className={classes.link}>
                 Sobre nós
               </Link>
-              <Link to="/contact" className={classes.link}>
-                Contact
-              </Link>
-              <Link to="/" onClick={() => scrollToSection('faq')}>
+              <Link to="/" onClick={() => scrollToSection('faq')} className={classes.link}>
                 FAQ
+              </Link>
+              <Link to="/" onClick={() => scrollToSection('contact')} className={classes.link}>
+                Contato
               </Link>
             </div>
           )}

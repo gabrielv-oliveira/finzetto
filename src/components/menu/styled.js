@@ -35,9 +35,10 @@ export const Component = styled.header`
 .makeStyles-navlinks-1{
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 433px;
     align-items: center;
     z-index: 1;
+    gap: 2rem;
 
     a {
     font-family: 'Ubuntu', sans-serif;
@@ -49,13 +50,15 @@ export const Component = styled.header`
         background-color: var(--primary-blue);
         padding: 0.5rem 2rem;
         border-radius: 5px;
-        transition: 0.3s;
+        transition: 0.3s;d
 
         :hover{
-            background-color: var(--purple);
+            background-color: #077461;
         }
     }
 }
+
+  
 }
 
 

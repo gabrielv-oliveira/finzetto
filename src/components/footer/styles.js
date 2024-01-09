@@ -5,24 +5,35 @@ export const Component = styled.div`
   overflow: hidden;
   padding: 1.2rem;
   margin-top: 2rem;
-  
+ 
 
   ::before {
     background-color: var(--primary-light-blue);
     z-index: -1;
     width: 500px;
     height: 500px;
-    top: 0;
- 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
     content: "";
     position: absolute;
     filter: blur(100px);
     }
-
-  img{
-    width: 150px;
+  
+    .company{
+       width: 200px;
+      img{   
     max-width: 100%;
-  }
+    }
+
+    p{
+      text-align: justify;
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    }
+  
 
   h2 {
         color: var(--primary-blue);  
@@ -30,8 +41,9 @@ export const Component = styled.div`
       }
   .content{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: start;
+    flex-wrap: wrap;
 
     .flex-center {
       display: flex;

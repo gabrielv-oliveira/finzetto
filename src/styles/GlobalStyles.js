@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
   --gradient-pink: #CF21FE;
   --gradient-blue: #05050F;
   --gradient-teal: #481FFE;
-  --gradient-dark-purple: #7051F6;
+  --gradient-dark-purple:  102,57,228;;
 }
 
 html{
@@ -56,11 +56,12 @@ html{
 
 body{
   background: var(--neutral-gray) no-repeat;
+  row-gap: 1rem;
  }
 
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li{

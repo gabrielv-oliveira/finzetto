@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Slider from "./slyder";
 import { Icon } from "../components/icon";
 import Text from "./text";
+import { Contact } from "../components/contact";
 
 export default function About() {
   return (
@@ -17,6 +18,7 @@ export default function About() {
       <Slider />
       <Text />
       <Icon />
+      <Contact />
       <Footer />
     </>
   )

@@ -1,6 +1,7 @@
 import { Component } from "./styled";
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import React, { useEffect } from 'react';
 
 
 export default function Slider() {
@@ -21,6 +22,18 @@ export default function Slider() {
       },
     },
   });
+
+  useEffect(() => {
+    const esconderSplineViewer = () => {
+      const splineViewerElement = document.getElementById('logo');
+
+      if (splineViewerElement) {
+        splineViewerElement.style.setProperty('display', 'none', 'important');
+      }
+    };
+    esconderSplineViewer();
+  }, []);
+
 
 
 
