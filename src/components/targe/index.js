@@ -17,6 +17,7 @@ export function Targe() {
         <Button
           variant="contained"
           style={{ background: 'var(--accent-purple)', color: 'white' }}
+          href="#contact"
         >
           Fale Conosco
         </Button>

@@ -25,8 +25,25 @@ export const Component = styled.div`
     border: 2px solid #fff;
     border-radius: 50%;
     font-size: 35px;
+    animation: vertical-shaking 2s infinite;
+    @keyframes vertical-shaking {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(3px);
+      }
+      50% {
+        transform: translateY(-3px);
+      }
+      75% {
+        transform: translateY(3px);
+      }
+      100% {
+        transform: translateY(0);
+      }
   }
-  }
+  }}
  
  
 

@@ -9,11 +9,11 @@ export const Component = styled.div`
   width: 100%;
   gap: 4rem;
   background-color: var(--primary-blue);
-  margin-top: 65px;
+  margin-top: 130px;
   margin-bottom: 25px;
   position: relative;
 
-  
+  text-align: center;
 
   .safe{    
     position: relative;  
@@ -66,6 +66,7 @@ export const Component = styled.div`
       color: var(--accent-purple);
       font-weight: bolder;
     }
+  
     button{
       width: 150px;
     }
