@@ -1,13 +1,13 @@
 import React from 'react';
+import cardsData from '../../data/cards.json';
 import { Itens } from "./itens";
 import { Card } from "./styles";
-import cardsData from '../../data/cards.json';
 
 export function Cards() {
   const data = cardsData.cards;
 
   return (
-    <Card>
+    <Card data-aos="fade-up">
       {data.slice().reverse().map((card, index) => (
         <Itens
           key={index}

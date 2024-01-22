@@ -7,8 +7,8 @@ export function About() {
 
   return (
     <Component id="about">
-      <img src="/about.jpg" alt="About us" />
-      <Content />
+      <img src="/about.jpg" alt="About us" data-aos="fade-left" />
+      <Content/>
     </Component>
   )
 }

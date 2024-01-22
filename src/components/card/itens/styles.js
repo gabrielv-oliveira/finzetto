@@ -11,8 +11,8 @@ export const Item = styled.div`
   z-index: 1;
   
   gap: 2rem;
-  height: 200px;
-  width: 240px;
+  height: 308px;
+  width: 289px;
   padding: 1rem;
 
   border: 1px solid rgba(var(--neutral-light-rgb),0.1);

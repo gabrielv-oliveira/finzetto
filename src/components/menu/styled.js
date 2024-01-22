@@ -50,7 +50,7 @@ export const Component = styled.header`
         background-color: var(--primary-blue);
         padding: 0.5rem 2rem;
         border-radius: 5px;
-        transition: 0.3s;d
+        transition: 0.3s;
 
         :hover{
             background-color: #077461;

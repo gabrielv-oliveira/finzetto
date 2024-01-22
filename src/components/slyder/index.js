@@ -39,7 +39,7 @@ export default function Slider() {
 
   return (
     <Component>
-      <hgroup>
+      <hgroup data-aos="fade-right">
         <p className="topTitle">Temos as melhores</p>
         <h1>
           Soluções de<br />

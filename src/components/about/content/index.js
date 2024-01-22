@@ -1,6 +1,6 @@
-import { Component } from "./styles";
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Component } from "./styles";
 
 export function Content() {
   const theme = createTheme({
@@ -19,7 +19,7 @@ export function Content() {
     },
   });
   return (
-    <Component>
+    <Component data-aos="fade-right">
       <hgroup>
         <h2>Elevando a sua Segurança Cibernética </h2>
         <p>Nosso compromisso é oferecer aos clientes soluções de segurança cibernética excepcionais, destacando-nos por meio de abordagens ágeis, inteligentes e inovadoras. Através da otimização segura dos processos de negócio, visamos proteger de maneira robusta os dados e informações, navegando eficazmente em um cenário cada vez mais digital e interconectado.</p>

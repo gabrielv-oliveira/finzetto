@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const Component = styled.div`
-
-  padding: 1rem 1rem 3rem 1rem;
+  height: 30vw;
+  padding: 1rem;
   position: relative;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-evenly;
+  background: linear-gradient(180deg,hsla(0,0%,7%,.6) 60%,#111);
 
   hgroup {
     z-index: 1;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    
     gap: 1.5rem;
     width: 450px;
 

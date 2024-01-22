@@ -9,7 +9,7 @@ export function Hide() {
       <ul>
         <h1>Por que nos <strong>contratar?</strong></h1>
         {data.map((card, index) => (
-          <Reasons
+          <Reasons data-aos="fade-left"
             key={index}
             id={card.id}
             title={card.title}

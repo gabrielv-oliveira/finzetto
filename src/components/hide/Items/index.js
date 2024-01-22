@@ -3,7 +3,7 @@ import { Component } from "./style";
 
 export function Reasons(props) {
   return (
-    <Component>
+    <Component data-aos="fade-left">
           <h1>{props.id}</h1>
           <section>
             <h2>{props.title}</h2>

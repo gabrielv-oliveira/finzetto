@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./home/Home";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect, useState } from 'react';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Pentest from "./Pentest/Pentest";
 import About from "./about/About";
-import Loading from './components/loading';
+import Home from "./home/Home";
 
+AOS.init({ delay: 50 });
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -21,14 +23,14 @@ function App() {
 
   return (
     <Router>
-     {/*} {loading ? (
+      {/*} {loading ? (
         <Loading />
      ) : (*/}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/avaliacao-de-seguranca-de-aplicacoes" element={<Pentest />} />
-          <Route path="/quem-somos" element={<About />} />
-        </Routes>{/*)}*/}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/avaliacao-de-seguranca-de-aplicacoes" element={<Pentest />} />
+        <Route path="/quem-somos" element={<About />} />
+      </Routes>{/*)}*/}
     </Router>
   );
 }

@@ -14,7 +14,7 @@ export function Form() {
         style={{
           width: "60vw",
           minWidth: '100%',
-          height: '800px',
+          height: '980px',
           border: 'none',
         }}
       ></iframe>
