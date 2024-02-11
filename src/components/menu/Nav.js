@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   AppBar,
   Toolbar,
@@ -7,10 +7,10 @@ import {
   makeStyles,
   useTheme,
   useMediaQuery,
-} from "@material-ui/core";
-import { Link } from "react-router-dom";
-import DrawerComponent from "./Drawer";
-import { Component } from "./styled";
+} from "@material-ui/core"
+import { Link } from "react-router-dom"
+import DrawerComponent from "./Drawer"
+import { Component } from "./styled"
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -32,28 +32,27 @@ const useStyles = makeStyles((theme) => ({
       borderBottom: "1px solid white",
     },
   },
-}));
+}))
 
 function Navbar() {
-  const classes = useStyles();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const classes = useStyles()
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"))
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
+    const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" })
     }
-  };
+  }
   return (
     <Component>
-      <AppBar position="static" className="navBar">
+      <AppBar position="fixed" className="navBar">
         <CssBaseline />
         <Toolbar className="toolbar">
-          <Typography variant="h3" >
+          <Typography variant="h3">
             <a href="/">
               <img src="/logo.png" alt="Logo" />
             </a>
-
           </Typography>
           {isMobile ? (
             <DrawerComponent />
@@ -65,10 +64,18 @@ function Navbar() {
               <Link to="/quem-somos" className={classes.link}>
                 Sobre nós
               </Link>
-              <Link to="/" onClick={() => scrollToSection('faq')} className={classes.link}>
+              <Link
+                to="/"
+                onClick={() => scrollToSection("faq")}
+                className={classes.link}
+              >
                 FAQ
               </Link>
-              <Link to="/" onClick={() => scrollToSection('contact')} className={classes.link}>
+              <Link
+                to="/"
+                onClick={() => scrollToSection("contact")}
+                className={classes.link}
+              >
                 Contato
               </Link>
             </div>
@@ -76,6 +83,6 @@ function Navbar() {
         </Toolbar>
       </AppBar>
     </Component>
-  );
+  )
 }
-export default Navbar;
+export default Navbar
