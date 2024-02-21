@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Component = styled.div`
 
-  padding: 1rem 1rem 3rem 1rem;
+  padding: 5rem 1rem 3rem 1rem;
   position: relative;
   display: flex;
   flex-wrap: wrap-reverse;

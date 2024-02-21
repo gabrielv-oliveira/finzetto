@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -26,7 +25,8 @@ export const GlobalStyle = createGlobalStyle`
   --gradient-orange: #FFA904;
   
   --neutral-dark: #05050F;
-  --neutral-gray: #14142B;
+  --neutral-dark-purple: #14142B;
+  --neutral-purple: #382963;
   --neutral-gray-rgb: 5, 5, 15;
   --neutral-light-rgb: 255, 255, 255;
   --neutral-mid: #8F99A3;
@@ -55,7 +55,7 @@ html{
     }
 
 body{
-  background: var(--neutral-gray) no-repeat;
+  background: var(--neutral-purple) no-repeat;
   row-gap: 1rem;
  }
 
@@ -68,4 +68,4 @@ li{
     list-style-type: none;
 }
 
-`;
+`

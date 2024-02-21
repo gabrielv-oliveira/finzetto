@@ -1,11 +1,10 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Component = styled.div`
   position: relative;
   overflow: hidden;
   padding: 1.2rem;
   margin-top: 2rem;
- 
 
   ::before {
     background-color: var(--primary-light-blue);
@@ -19,28 +18,27 @@ export const Component = styled.div`
     content: "";
     position: absolute;
     filter: blur(100px);
-    }
-  
-    .company{
-       width: 200px;
-      img{   
-    max-width: 100%;
+  }
+
+  .company {
+    width: 200px;
+    img {
+      max-width: 100%;
     }
 
-    p{
+    p {
       text-align: justify;
       font-size: 0.7rem;
       color: rgba(255, 255, 255, 0.5);
     }
-    }
-  
+  }
 
   h2 {
-        color: var(--primary-blue);  
-        margin-bottom: 15px ;
-      }
-  .content{
-    display:flex;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+  }
+  .content {
+    display: flex;
     justify-content: space-evenly;
     align-items: start;
     flex-wrap: wrap;
@@ -51,69 +49,61 @@ export const Component = styled.div`
       justify-content: center;
       align-items: center;
       gap: 0.5em;
-  
-      
-  
-      .contact{
+
+      .contact {
         display: grid;
         row-gap: 0.5em;
-        li{
-          
-          a{
-           font-weight: 700;
-           color: #fff;
-          }a
-     
-          i{
-           font-size: 20px;
-           margin-right: 5px;
+        li {
+          a {
+            font-weight: 700;
+            color: #fff;
+          }
+          a i {
+            font-size: 20px;
+            margin-right: 5px;
           }
 
-          :hover{
+          :hover {
             transform: scale(1.1);
-            a{
+            a {
               color: var(--primary-blue);
             }
           }
         }
-      
       }
-  
-      .social{
+
+      .social {
         width: 100%;
         display: flex;
-        justify-content: space-between ;
+        justify-content: space-between;
       }
       .icon-3d {
-      font-size: 2rem;      
-         color: #fff;
-      &:hover {
-        animation: icon3d-hover 200ms infinite; 
+        font-size: 2rem;
+        color: #fff;
+        &:hover {
+          animation: icon3d-hover 200ms infinite;
+        }
       }
-    }
-   
-  
     }
   }
 
-  .copyright{
+  .copyright {
     display: flex;
     position: inherit;
     width: 100%;
     height: 2rem;
     padding-top: 3rem;
 
-    p{
-    color: var(--primary-blue);
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    
-    
-    span{
-      color: var(--primary-light-blue);
-      font-weight: bolder;
-    }
+    p {
+      color: var(--primary-blue);
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+
+      span {
+        color: var(--primary-light-blue);
+        font-weight: bolder;
+      }
     }
   }
 
@@ -134,4 +124,8 @@ export const Component = styled.div`
       text-shadow: -5px 0 var(--redColor), 5px -4px var(--blueColor);
     }
   }
-`;
+
+  @media screen and (max-width: 850px) {
+    width: 100%;
+  }
+`

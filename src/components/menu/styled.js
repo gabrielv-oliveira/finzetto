@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Component = styled.header`
   .navBar {
-    background-color: var(--neutral-gray);
+    background-color: var(--neutral-dark-purple);
 
     .toolbar {
       width: 100%;

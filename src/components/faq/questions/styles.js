@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Component = styled.details`
   background: var(--neutral-dark);
@@ -46,8 +46,9 @@ export const Component = styled.details`
   }
 
   @media screen and (max-width: 600px) {
-       summary {
+    width: 90%;
+    summary {
       align-items: flex-start;
     }
   }
-`;
+`

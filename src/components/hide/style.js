@@ -28,6 +28,10 @@ export const Component = styled.div`
     transform: translate(-50%, -50%);
   }
 
+  @media screen and (max-width: 850px){
+    padding: 0;
+  }
+
 }
 
   
